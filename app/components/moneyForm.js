@@ -37,33 +37,33 @@ class moneyForm extends Component {
                 <Content>
                 <Thumbnail source={{ uri: 'https://cdn2.iconfinder.com/data/icons/business-charts/512/earnings-512.png' }} large style={{ marginLeft: 130}}/>
                     <Form >
-                        <Item style={{ marginTop: 20}} rounded success>
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel>
+                        <Label>Amount</Label>
                             <Input
                                 label="Amount"
-                                placeholder="  Amount"
                                 onChangeText={this.onTypeChange.bind(this)}
                                 value={this.props.type}   
         
                             />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                            <Label>Description</Label>
                             <Input
                             label="Description"
-                            placeholder="Description"
                             onChangeText={this.onDesChange.bind(this)}
                             value={this.props.description}
                             />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                        <Label>NGO</Label>
                             <Input
                             label="NGO"
-                            placeholder="NGO"
                             />
                         </Item>
                     </Form>
                     
                     <Button  onPress={this.onButtonPress3.bind(this)}
-                            style={{ marginTop: 20 }}rounded danger block>
+                            style={{ marginTop: 20 }} primary full>
                         <Text style={{ fontSize: 17 }}>Donate</Text>
                     </Button>
                 </Content>

@@ -22,7 +22,7 @@ class kindForm extends Component {
 
     onButtonPress3() {
         console.log(this.props.description);
-        axios.get('http://35.166.45.231:8001/donate?donation_type=2&donation_description='+this.props.description+'&donation_amount='+this.props.type)
+        axios.get('http://192.168.43.193:8000/donate?donation_type=2&donation_description='+this.props.description+'&donation_amount='+this.props.type)
           .then(function (response) {
                 console.log(response.data.success);
                 Actions.profile();
@@ -39,25 +39,25 @@ class kindForm extends Component {
                 <Content>
                 <Thumbnail source={{ uri: 'https://cdn2.iconfinder.com/data/icons/rewards-1/512/present-512.png' }} large style={{ marginLeft: 120}}/>
                     <Form >
-                        <Item style={{ marginTop: 20}} rounded success>
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel>
+                            <Label>Type</Label>
                             <Input
                                 label="Type"
-                                placeholder="    Type"
         
                             />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                            <Label>Description</Label>
                             <Input
                             label="Description"
-                            placeholder="Description"
                             onChangeText={this.onDesChange.bind(this)}
                             value={this.props.description}
                              />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success last >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                        <Label>Number of beneficiaries</Label>
                             <Input
                             label="Benefactory number"
-                            placeholder="Number of beneficiaries"
                                 onChangeText={this.onTypeChange.bind(this)}
                                 value={this.props.type}  
                              />
@@ -65,7 +65,7 @@ class kindForm extends Component {
                     </Form>
                     
                     <Button  onPress={this.onButtonPress3.bind(this)}
-                            style={{ marginTop: 20 }}rounded danger block>
+                            style={{ marginTop: 20 }}primary full >
                         <Text style={{ fontSize: 17 }}>Donate</Text>
                     </Button>
                 </Content>

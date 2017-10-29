@@ -40,7 +40,7 @@ class acceptForm extends Component {
         // .then(response => console.log(response))
         // .catch((error) => console.warn(error))
 
-        axios.get('http://35.166.45.231:8001/donate_accept?donation_id='+this.props.ids+'&donation_reciever='+this.props.receiver+'&time='+this.props.date+'&donation_mobile='+this.props.contact)
+        axios.get('http://192.168.43.193:8000/donate_accept?donation_id=11&donation_reciever='+this.props.receiver+'&time='+this.props.date+'&donation_mobile='+this.props.contact)
           .then(function (response) {
                 Actions.nprofile3();
           })
@@ -57,26 +57,26 @@ class acceptForm extends Component {
                 <Content>
                 <Thumbnail source={{ uri: 'https://cdn2.iconfinder.com/data/icons/rewards-1/512/present-512.png' }} large style={{ marginLeft: 120}}/>
                     <Form >
-                        <Item style={{ marginTop: 20}} rounded success>
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel>
+                            <Label>Receiver</Label>
                             <Input
                                 label="Receiver"
-                                placeholder="    Receiver"
                                 onChangeText={this.onReceiverChange.bind(this)}
                                 value={this.props.receiver}   
                             />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                        <Label>Date and Time</Label>
                             <Input
                             label="Date and Time"
-                            placeholder="    Date and Time"
                                 onChangeText={this.onDateChange.bind(this)}
                                 value={this.props.date}   
                              />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  success last >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                            <Label>Phone no.</Label>
                             <Input
                             label="Phone no."
-                            placeholder="Phone no."
                                 onChangeText={this.onContactChange.bind(this)}
                                 value={this.props.contact}   
                              />
@@ -84,7 +84,7 @@ class acceptForm extends Component {
                     </Form>
                     
                     <Button  onPress={this.onButtonPress.bind(this)}
-                            style={{ marginTop: 20 }}rounded danger block>
+                            style={{ marginTop: 20, marginLeft: 20, marginRight:20}}primary full>
                         <Text style={{ fontSize: 17 }}>Accept</Text>
                     </Button>
                 </Content>

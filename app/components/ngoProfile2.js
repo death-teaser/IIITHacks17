@@ -93,7 +93,7 @@ class showProfile extends Component {
                         <Body>
                             <Text style={{fontWeight:'bold'}}>Cry Freedom Concert</Text>
                             <Text note>Fight on violence again woman gets louder</Text>
-                            <Text note>April 28, 2017  10:00 AM </Text>
+                            <Text note>October 28, 2017  10:00 AM </Text>
                         </Body>
                         <Right>
                             <Button transparent>
@@ -108,7 +108,7 @@ class showProfile extends Component {
                         <Body>
                             <Text style={{fontWeight:'bold'}}>Summer Volunteer Program</Text>
                             <Text note>Its time to build a difference . .</Text>
-                            <Text note>April 29, 2017  12:00 PM </Text>
+                            <Text note>October 29, 2017  12:00 PM </Text>
                         </Body>
                         <Right>
                             <Button transparent>
@@ -123,7 +123,7 @@ class showProfile extends Component {
                         <Body>
                             <Text style={{fontWeight:'bold'}}>Run for Charity</Text>
                             <Text note>Empowering India</Text>
-                            <Text note>May 30, 2017  12:00 PM </Text>
+                            <Text note>November 30, 2017  12:00 PM </Text>
                         </Body>
                         <Right>
                             <Button transparent>
@@ -138,7 +138,7 @@ class showProfile extends Component {
                         <Body>
                             <Text style={{fontWeight:'bold'}}>Charity concert i-India</Text>
                             <Text note>Funds up, Hands down</Text>
-                            <Text note>April 31, 2017  11:00 PM </Text>
+                            <Text note>October 31, 2017  11:00 PM </Text>
                         </Body>
                         <Right>
                             <Button transparent>
@@ -153,7 +153,7 @@ class showProfile extends Component {
                         <Body>
                             <Text style={{fontWeight:'bold'}}>The India Giving Challenge</Text>
                             <Text note>Lets do something better</Text>
-                            <Text note>April 31, 2017  11:00 PM </Text>
+                            <Text note>October 31, 2017  11:00 PM </Text>
                         </Body>
                         <Right>
                             <Button transparent>

@@ -4,6 +4,7 @@ import React, {
 import {
     ListView,
     TouchableOpacity,
+    Dimensions,
     Text,
     View,
     Image,
@@ -54,17 +55,9 @@ class showProfile extends Component {
         });
     }
 
-
-    // combatConcurrency() {
-    //   if(this.props.clash==true) {
-    //     if(this.props.dist1 < this.props.dist2) {
-    //       this.props.location = this.props.dist1;
-    //     }
-    //   else {
-    //             this.props.location = this.props.dist2;
-    //     }
-    //   }
-    // }
+    onButtonPress() {
+      Actions.donateNow();
+    }
 
     renderRow(data) {
       console.log(data.status);
@@ -116,6 +109,7 @@ class showProfile extends Component {
             return ( 
               <Container>
                 <Content>
+
                   <View>
                   <Image source={{ uri: 'https://i.ytimg.com/vi/pbmoEk1PASE/maxresdefault.jpg' }} style={styles.imgBack}>
                     <Thumbnail source={{ uri: 'http://img11.deviantart.net/e4a2/i/2016/096/f/7/avatar_icon_by_astrolink247-d9xxs6r.jpg' }} bordered large style={{ marginLeft: 120, marginTop: 50}} />
@@ -136,13 +130,15 @@ class showProfile extends Component {
                     </Image>
                   </View>
 
+
                   <View>
                     <List>
                     <ListView dataSource={this.ds.cloneWithRows(this.props.pList)}
                             renderRow={this.renderRow.bind(this)}
                       />
                       </List>
-                  </View>         
+                  </View>
+
           </Content>
       </Container>
             );
