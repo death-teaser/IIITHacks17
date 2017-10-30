@@ -66,21 +66,21 @@ class LoginForm extends Component {
         return (
             <Container style={{ marginTop: 80}}>
                 <Content>
-                <Thumbnail source={{ uri: 'http://brandmark.io/logo-rank/random/beats.png' }} large style={{ marginLeft: 130}}/>
+                <Thumbnail source={{ uri: 'https://static-cdn.jtvnw.net/jtv_user_pictures/panel-129569919-image-970f56158f408288-320-320.png' }} large square style={{ marginLeft: 100,marginRight: 100, height: 150, width: 150}}/>
                     <Form style={{ backgroundColor: 'white'}}>
-                        <Item style={{ marginTop: 20}} rounded danger>
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel>
+                            <Label>Email</Label>
                             <Input
-                                label="Email"
-                                placeholder="    Username"
+                                label="Mail"
                                 onChangeText={this.onEmailChange.bind(this)}
                                 value={this.props.email}         
                             />
                         </Item>
-                        <Item style={{ marginTop: 20}} rounded  last >
+                        <Item style={{ marginLeft: 20, marginRight:20}} floatingLabel >
+                            <Label>Password</Label>
                             <Input
                             secureTextEntry={true}
                             label="Password"
-                            placeholder="Password"
                             onChangeText={this.onPassChange.bind(this)}
                             value={this.props.password}
                              />
@@ -88,7 +88,7 @@ class LoginForm extends Component {
                     </Form>
                     
                     <Button  onPress={this.onButtonPress.bind(this)}
-                            style={{ marginTop: 20 }}rounded danger block>
+                            style={{ marginTop: 20, marginLeft: 20, marginRight:20}} primary full>
                         <Text style={{ fontSize: 17 }}>Log In</Text>
                     </Button>
                    <Button onPress={() => Actions.signUp()} 

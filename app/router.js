@@ -19,7 +19,7 @@ const RouterComponent = () => {
             <Scene key="donateNow" component={DonateFormOne} title="Donate" rightTitle="Logout" onRight={() => Actions.login()} />
             <Scene key="moneyForm" component={moneyForm} title="Details"  rightTitle="Logout" onRight={() => Actions.login()} />
             <Scene key="kindForm" component={kindForm} title="Details"  rightTitle="Logout" onRight={() => Actions.login()} />
-            <Scene key="profile" component={showProfile} title="Your Profile"  rightTitle="Events" onRight={() => Actions.nprofile2()} />
+            <Scene key="profile" component={showProfile} title="Your Profile"  leftTitle=" " rightTitle="Events" onRight={() => Actions.nprofile2()} />
             <Scene key="nprofile" component={ngoProfile} title="Your Profile" rightTitle="Create" onRight={() => Actions.nprofile3()}/>
             <Scene key="acceptForm" component={acceptForm} title="Donation details"  rightTitle="Logout" onRight={() => Actions.login()} />
             <Scene key="nprofile2" component={ngoProfile2} title="Events"  rightTitle="Logout" onRight={() => Actions.login()}  />

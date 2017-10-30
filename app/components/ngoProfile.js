@@ -62,6 +62,7 @@ class showProfile extends Component {
                     <Text note>{data.date.split(' ')[0]}</Text>
                     <Text note>{data.date.split(' ')[1].split('.')[0]}</Text>
                   </View>
+                  <Text style={{fontWeight:'bold'}}>{data.from}</Text>
               </Body>
               <Thumbnail small source={{ uri: 'https://cdn1.iconfinder.com/data/icons/navigation-and-ui-menu/32/negative_pending_neutral_circle_loading-128.png'}} />
           </ListItem>
@@ -76,6 +77,7 @@ class showProfile extends Component {
                     <Text note>{data.date.split(' ')[0]}</Text>
                     <Text note>{data.date.split(' ')[1].split('.')[0]}</Text>
                   </View>
+                  <Text style={{fontWeight:'bold'}}>{data.from}</Text>
               </Body>
               <Thumbnail small source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Icons8_flat_ok.svg/2000px-Icons8_flat_ok.svg.png'}} />
           </ListItem>
